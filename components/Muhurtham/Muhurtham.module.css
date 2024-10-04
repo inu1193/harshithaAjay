@@ -1,0 +1,91 @@
+.muhurthamSec{
+    display: flex;
+    width: 54.24063rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.275rem;
+    align-self: stretch;
+}
+
+.p{
+    color: var(--grayDark, #4A4A4A);
+    text-align: center;
+    font-family: Playfair;
+    font-size: 3.1875rem;
+    font-weight: 600;
+}
+
+.am{
+    color: var(--grayDark, #4A4A4A);
+    font-family: Playfair;
+    font-size: 2.65625rem;
+    font-weight: 600;
+}
+
+.hrContainer{
+    display: flex;
+    padding: 0rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.hr{
+    width: 50.24063rem;
+    height: 0.10625rem;
+    border: none;
+    border-top: 2px dashed var(--gold);
+    stroke-dasharray: 8.5 10.2;
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+    .muhurthamSec{
+        width: 80vw;
+        gap: 2rem;
+    }
+    
+    .sec1{
+        gap: 1rem;
+    }
+    
+    .p{
+        font-size: 2.75rem;
+    }
+    
+    .am{
+        font-size: 2.25rem;
+    }
+    .hr{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .muhurthamSec{
+        width: 100vw;
+        gap: 1.5rem;
+    }
+    
+    .sec1{
+        gap: 0.5rem;
+    }
+    
+    .p{
+        font-size: 1.25rem;
+    }
+    
+    .am{
+        font-size: 1.15rem;
+    }
+    .hr{
+        width: 80vw;
+    }
+}
