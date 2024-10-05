@@ -20,6 +20,7 @@ const Navbar = () => {
   };
 
   return (
+    <div className='body'>
     <header className={styles.header}>
       <div className={styles.logoParent}>
         <Image className={styles.logoIcon} alt="Wedding Logo" src={logo.src} width={90} height={70} />
@@ -66,6 +67,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 

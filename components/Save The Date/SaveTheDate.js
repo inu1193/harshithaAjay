@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import coralheart from '../../assets/coralheart.png';
-import white_heart from '../../assets/white_heart.svg';
+import white_heart from '../../assets/whiteHeart.png';
 import styles from './SaveTheDate.module.css';
 import Button from '../Button/Button';
 
