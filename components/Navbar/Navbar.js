@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 import logo from '../../assets/logo.png';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -26,43 +27,43 @@ const Navbar = () => {
         <Image className={styles.logoIcon} alt="Wedding Logo" src={logo.src} width={90} height={70} />
         <div className={styles.frameParent}>
           <div className={styles.welcomeParent}>
-          <div className={styles.frameChild} />
+          {/* <div className={styles.frameChild} /> */}
           </div>
           <div className={styles.saveTheDate}>
-            <a 
+            <Link 
               href="#home" 
               onClick={(e) => handleLinkClick('#home', e)} 
               className={activeLink === 'home' ? `${styles.activeLink} active` : ''}
             >
               Welcome
-            </a>
+            </Link>
           </div>
           <div className={styles.saveTheDate}>
-            <a 
+            <Link 
               href="#save-the-date" 
               onClick={(e) => handleLinkClick('#save-the-date', e)} 
               className={activeLink === 'save-the-date' ? `${styles.activeLink} active` : ''}
             >
-              Wedding Date
-            </a>
+              Save the Date
+            </Link>
           </div>
           <div className={styles.saveTheDate}>
-            <a 
+            <Link 
               href="#muhurtham" 
               onClick={(e) => handleLinkClick('#muhurtham', e)} 
               className={activeLink === 'muhurtham' ? `${styles.activeLink} active` : ''}
             >
               Muhurtham
-            </a>
+            </Link>
           </div>
           <div className={styles.saveTheDate}>
-            <a 
+            <Link 
               href="#reception" 
               onClick={(e) => handleLinkClick('#reception', e)} 
               className={activeLink === 'reception' ? `${styles.activeLink} active` : ''}
             >
-              Reception
-            </a>
+              Venue
+            </Link>
           </div>
         </div>
       </div>

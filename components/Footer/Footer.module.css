@@ -8,6 +8,8 @@
     color: #333; /* White text color */
     font-family: Arial, sans-serif; /* Font family */
     text-align: center; /* Center align text */
+    margin-top: 13rem;
+    padding-bottom: 2.5rem;
 }
 
 .logoContainer {
@@ -60,10 +62,12 @@
     margin-bottom: 10px;
 }
 /* Responsive styles */
-@media (min-width: 600px) {
+@media screen and (max-width:1024px) and (min-width: 768px) {
     .footer {
         flex-direction: row; /* Change to row layout on wider screens */
         justify-content: space-around; /* Space elements evenly */
+        margin-top: 8rem;
+        padding-bottom: 2.5rem;
     }
 
     .logoContainer {
@@ -72,5 +76,12 @@
 
     .addressContainer {
         margin-left: 20px; /* Add margin on wider screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 8rem;
+        padding-bottom: 2.5rem;
     }
 }

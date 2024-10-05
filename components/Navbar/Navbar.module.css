@@ -64,6 +64,7 @@
  /* Black text color */
   text-decoration: none; /* No underline */
   transition: color 0.3s ease; /* Smooth transition for color change */
+  margin: 0 1rem;
 }
 
 /* Pseudo-classes for interactive elements */
@@ -73,13 +74,11 @@
 
 .saveTheDate a:active {
   color: coral;
-
-  text-decoration: underline; /* Underline on active state */
 }
 
 
 /* Media Queries */
-@media (min-width: 350px) and (max-width: 860px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
   .header{
     width: 100%;
   }
@@ -91,7 +90,7 @@
   .logoParent {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center the logo */
-    justify-content: space-around;
+    justify-content: center;
     padding: 4px 20px;
     font-size: 18px;
     gap: 10px;
@@ -108,13 +107,6 @@
     width: 100%;
   }
 
-  .saveTheDate {
-
-  }
-
-  .logoIcon {
-
-  }
 }
 
 /* Styles for the active navigation link */
@@ -126,4 +118,18 @@
   /* font-family: Arial, Helvetica, sans-serif; */
   margin: 0;
   overflow-x:hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .saveTheDate{
+    display: none;
+  }
+  .logoParent {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the logo */
+    justify-content: center;
+  }
+  .header{
+    padding: 0px;
+  }
 }

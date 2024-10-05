@@ -41,8 +41,9 @@ const SaveTheDate = () => {
   }, []);
 
   return (
-    <div className={styles.savethedate}>
-      <div className={styles.saveTheDate}>Save the Date</div>
+    <main className='main'>
+    <div className={styles.savethedateSec}>
+      <div className='title'>Save the Date</div>
       <div className={styles.november4th2024MondayParent}>
         <div className={styles.saveTheDate}>
           <span className={styles.november}>{`November `}</span>
@@ -56,7 +57,7 @@ const SaveTheDate = () => {
         <div className={styles.countdown}>
           <div className={styles.heartParent}>
             <div className={styles.heart}>
-              <Image className={styles.clipPathGroup} alt="Coral Heart" src={coralheart} />
+              <Image className={styles.clipPathGroup} alt="Coral Heart" src={coralheart} priority />
               <div className={styles.div}>{timeLeft.days}</div>
             </div>
             <div className={styles.days}>Days</div>
@@ -64,7 +65,7 @@ const SaveTheDate = () => {
           <div className={styles.div1}>:</div>
           <div className={styles.heartGroup}>
             <div className={styles.heart}>
-              <Image className={styles.clipPathGroup} alt="White Heart" src={white_heart} />
+              <Image className={styles.clipPathGroup} alt="White Heart" src={white_heart}  priority />
               <div className={styles.div}>{timeLeft.hours}</div>
             </div>
             <div className={styles.hours}>Hours</div>
@@ -72,7 +73,7 @@ const SaveTheDate = () => {
           <div className={styles.div3}>:</div>
           <div className={styles.heartGroup}>
             <div className={styles.heart}>
-              <Image className={styles.clipPathGroup} alt="White Heart" src={white_heart} />
+              <Image className={styles.clipPathGroup} alt="White Heart" src={white_heart} priority />
               <div className={styles.div}>{timeLeft.minutes}</div>
             </div>
             <div className={styles.hours}>Minutes</div>
@@ -81,6 +82,7 @@ const SaveTheDate = () => {
         <Button />
       </div>
     </div>
+    </main>
   );
 };
 

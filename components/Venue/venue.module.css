@@ -57,7 +57,7 @@
 
 @media screen and (max-width:768px){
     .venueSec{
-        width: 100vw;
+        width: 95vw;
         gap: 1rem;
         margin-top: 8rem;
     }
