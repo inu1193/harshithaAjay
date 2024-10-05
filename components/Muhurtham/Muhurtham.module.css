@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 13rem;
 }
 
 .sec1{
@@ -17,16 +18,16 @@
 .p{
     color: var(--grayDark, #4A4A4A);
     text-align: center;
-    font-family: Playfair;
+    font-family:var(--font-roboto);
     font-size: 3.1875rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .am{
     color: var(--grayDark, #4A4A4A);
-    font-family: Playfair;
+    font-family:var(--font-roboto);
     font-size: 2.65625rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .hrContainer{
@@ -42,7 +43,7 @@
     width: 50.24063rem;
     height: 0.10625rem;
     border: none;
-    border-top: 2px dashed var(--gold);
+    border-top: 2px dashed #ddd;
     stroke-dasharray: 8.5 10.2;
 }
 
@@ -50,6 +51,7 @@
     .muhurthamSec{
         width: 80vw;
         gap: 2rem;
+        margin-top: 10rem;
     }
     
     .sec1{
@@ -70,8 +72,9 @@
 
 @media screen and (max-width:768px){
     .muhurthamSec{
-        width: 100vw;
+        width: 95vw;
         gap: 1.5rem;
+        margin-top: 8rem;
     }
     
     .sec1{
@@ -79,7 +82,7 @@
     }
     
     .p{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     
     .am{

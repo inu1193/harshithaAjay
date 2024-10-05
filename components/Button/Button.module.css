@@ -27,8 +27,3 @@
     background: var(--coral-light);
 }
 
-@media (min-width: 350px) and (max-width: 860px){
-    .btnContainer{
-        width: 90vw;
-    }
-}

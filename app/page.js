@@ -1,8 +1,10 @@
-import Hero from '@/components/Hero/Hero';
-import Muhurtham from '@/components/Muhurtham/Muhurtham';
-import SaveTheDate from '@/components/Save The Date/SaveTheDate';
-import Venue from '@/components/Venue/Venue';
-import React from 'react';
+import Await from '@/components/Await/Await'
+import Button from '@/components/Button/Button'
+import Hero from '@/components/Hero/Hero'
+import Muhurtham from '@/components/Muhurtham/Muhurtham'
+import SaveTheDate from '@/components/Save The Date/SaveTheDate'
+import Venue from '@/components/Venue/Venue'
+import React from 'react'
 
 const page = () => {
   return (

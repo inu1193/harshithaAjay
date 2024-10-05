@@ -1,14 +1,3 @@
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +16,7 @@ body {
 .title{
   color: var(--grayDark, #4A4A4A);
   text-align: center;
-  font-family: "Great Vibes";
+  font-family: var(--font-great-vibes), sans-serif;
   font-size: 4.25rem;
   font-weight: 400;
 }
@@ -43,14 +32,14 @@ body {
 
 .coral{
   color: var(--Coral, #FF6F61);
-  font-family: Roboto;
+  font-family: var(--font-roboto);
   font-size: 2.975rem;
   font-weight: 800;
 }
 
 .bold{
   color: var(--grayDark, #4A4A4A);
-  font-family: Roboto;
+  font-family: var(--font-roboto);
   font-size: 2.975rem;
   font-weight: 800;
 }
@@ -59,13 +48,18 @@ body {
 body {
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
-  margin: 0 4rem;
+  margin: 0;
   overflow-x:hidden;
 }
 
+body::selection{
+  background:#FF8E83 ;
+}
+
+
 @media screen and (max-width:1024px) and (min-width:768px) {
   body{
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
     overflow-x: hidden;
   }
   .title{
@@ -85,15 +79,15 @@ body {
 
 @media screen and  ( max-width:768px) {
   body{
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     overflow-x:hidden;
   }
   .main{
     margin-top: 1.25rem;
   }
   .title{
-    font-family: "Great Vibes";
-    font-size: 2.5rem;
+    font-family: var(--font-great-vibes);
+    font-size: 3rem;
   }
   .coral{
     font-size: 1.5rem;

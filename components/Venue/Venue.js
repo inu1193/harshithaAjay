@@ -5,10 +5,10 @@ const Venue = () => {
   return (
     <main className='main'>
       <div className={styles.venueSec}>
-            <h1>Venue</h1>
-            <div>
-                <h2>RATHNA CONVENTION CENTRE</h2>
-                <p>KOLAR-MULABAGILU ROAD, KOLAR</p>
+            <h1 className='title'>Venue</h1>
+            <div className={styles.sec1}>
+                <h2 className={styles.h2}>RATHNA CONVENTION CENTRE</h2>
+                <p className={styles.p}>Kolar-Mulabagilu road, Kolar</p>
             </div>
       </div>
     </main>

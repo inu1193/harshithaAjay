@@ -26,7 +26,7 @@ const Navbar = () => {
         <Image className={styles.logoIcon} alt="Wedding Logo" src={logo.src} width={90} height={70} />
         <div className={styles.frameParent}>
           <div className={styles.welcomeParent}>
-            <div className={styles.frameChild} />
+          <div className={styles.frameChild} />
           </div>
           <div className={styles.saveTheDate}>
             <a 
