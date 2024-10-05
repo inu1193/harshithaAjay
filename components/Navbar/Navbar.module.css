@@ -1,3 +1,111 @@
-.navbar{
-    /* CSS goes here */
+.header {
+  width: 100%;
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 10px 0; /* Top and bottom padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  z-index: 1000; /* Stays on top */
 }
+
+.logoParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 100px; /* Padding around the logo and navigation */
+  box-sizing: border-box;
+  font-size: 24px; /* Adjusted font size */
+  color: #000; /* Black text color */
+  font-family: 'Playfair', serif; /* Playfair font */
+}
+
+.logoIcon {
+  width: 90px; /* Set width */
+  height: 70px; /* Set height */
+  object-fit: cover; /* Maintain aspect ratio */
+  position: relative;
+}
+
+.frameParent {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for items */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: flex-start; /* Align to the left */
+  gap: 40px; /* Space between items */
+}
+
+.welcomeParent {
+  display: flex;
+  flex-direction: column; /* Vertical layout for welcome text */
+  align-items: flex-end; /* Align text to the right */
+  justify-content: flex-start; /* Start from the top */
+  gap: 5px; /* Space between items */
+  color: #ff6f61; /* Custom color */
+}
+
+.welcome {
+  align-self: stretch; /* Stretch to fit */
+  position: relative;
+}
+
+.frameChild {
+  align-self: stretch; /* Stretch to fit */
+  position: relative;
+  border-top: 1px solid #ff6f61; /* Custom border */
+  height: 1px; /* Height for the border */
+}
+
+.saveTheDate {
+  position: relative; /* Relative positioning */
+}
+
+/* Link styles */
+.saveTheDate a {
+  color: #000; /* Black text color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Pseudo-classes for interactive elements */
+.saveTheDate a:hover {
+  color: coral; /* Change color on hover */
+}
+
+.saveTheDate a:active {
+  text-decoration: underline; /* Underline on active state */
+}
+
+
+@media (min-width: 350px) and (max-width: 860px) {
+  .logoIcon{
+    width: 125px; /* Set width */
+    height: 90px;
+
+  }
+  
+  .logoParent {
+    flex-direction: column; /* Stack items vertically */
+    align-items:center; /* Center the logo */
+    justify-content: space-around;
+    padding: 4px 20px;
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .frameParent {
+    flex-direction: row; /* Keep nav-links in a row */
+    flex-wrap: wrap; /* Allow nav-links to wrap to a new line */
+    justify-content: space-around; /* Center navigation links */
+    gap: 10px; /* Space between nav-links */
+    font-size: 16px;
+  }
+
+  .saveTheDate {
+    margin-top: 5px; /* Add margin for spacing between nav-links */
+  }
+
+  .logoIcon {
+    margin-bottom: 10px; /* Space between logo and nav-links */
+  }
+}
+

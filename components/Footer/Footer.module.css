@@ -1,3 +1,76 @@
-.footer{
-    /* CSS goes here */
+/* components/Footer.module.css */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Padding around footer */
+    background-color: #F5f5f5; /* Dark background color */
+    color: #333; /* White text color */
+    font-family: Arial, sans-serif; /* Font family */
+    text-align: center; /* Center align text */
+}
+
+.logoContainer {
+    margin-bottom: 15px; /* Space below the logo */
+}
+
+.logoImage {
+    width: 250px; /* Set width of logo image */
+    height: 250px; /* Keep aspect ratio */
+}
+
+.addressContainer {
+    text-align: center; /* Center align address text */
+}
+
+.addressTitle {
+    font-size: 18px; /* Title font size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.addressText {
+    font-size: 16px; /* Address text size */
+}
+
+/* components/Footer.module.css */
+.addressLink {
+    color: #FF6F61;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the icon and text */
+    justify-content: center; /* Horizontally center the entire content */
+    gap: 4px;/* Space between the pin icon and the text */
+}
+
+.addressLink:hover {
+    text-decoration: underline;
+}
+
+.pinIcon {
+    display: inline-block;
+}
+
+.footer-qr{
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* Responsive styles */
+@media (min-width: 600px) {
+    .footer {
+        flex-direction: row; /* Change to row layout on wider screens */
+        justify-content: space-around; /* Space elements evenly */
+    }
+
+    .logoContainer {
+        margin-bottom: 0; /* No margin on wider screens */
+    }
+
+    .addressContainer {
+        margin-left: 20px; /* Add margin on wider screens */
+    }
 }
