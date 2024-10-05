@@ -1,0 +1,28 @@
+<svg width="162" height="162" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clip path group">
+<mask id="mask0_17_85" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="162" height="162">
+<g id="a">
+<path id="Vector" d="M0 0H162V162H0V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_17_85)">
+<g id="Group">
+<g id="whiteHeart" filter="url(#filter0_i_17_85)">
+<path d="M157.247 54.7134C157.247 31.4792 138.412 12.6446 115.182 12.6446C101.079 12.6446 88.6353 19.6063 81 30.2472C73.3689 19.6063 60.9205 12.6446 46.8222 12.6446C23.588 12.6446 4.75338 31.4792 4.75338 54.7134C4.75338 58.0046 5.17117 61.1934 5.88738 64.2672C11.7322 100.555 52.0787 138.847 81 149.36C109.917 138.847 150.272 100.555 156.104 64.2672C156.829 61.1934 157.247 58.0046 157.247 54.7134Z" fill="#FCFCFC"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_17_85" x="4.75338" y="12.6446" width="152.493" height="140.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="6.65"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_17_85"/>
+</filter>
+</defs>
+</svg>

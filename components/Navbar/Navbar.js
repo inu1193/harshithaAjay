@@ -1,66 +1,67 @@
 'use client'
 import React, { useState } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
-  // State to track the active link
   const [activeLink, setActiveLink] = useState('home');
 
-  // Function to handle link click
-  const handleLinkClick = (link) => {
+  const handleLinkClick = (link, event) => {
+    event.preventDefault();
     setActiveLink(link);
+    const section = document.querySelector(link);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.logoParent}>
-        <img className={styles.logoIcon} alt="Wedding Logo" src={logo.src} />
+        <Image className={styles.logoIcon} alt="Wedding Logo" src={logo.src} width={90} height={70} />
         <div className={styles.frameParent}>
           <div className={styles.welcomeParent}>
-
             <div className={styles.frameChild} />
           </div>
           <div className={styles.saveTheDate}>
-            <Link href="#Home" passHref>
-              <span 
-                onClick={() => handleLinkClick('home')}
-                className={activeLink === 'home' ? styles.activeLink : ''}
-              >
-                Welcome
-              </span>
-            </Link>
+            <a 
+              href="#home" 
+              onClick={(e) => handleLinkClick('#home', e)} 
+              className={activeLink === 'home' ? `${styles.activeLink} active` : ''}
+            >
+              Welcome
+            </a>
           </div>
           <div className={styles.saveTheDate}>
-            <Link href="#save-the-date" passHref>
-              <span 
-                onClick={() => handleLinkClick('save-the-date')}
-                className={activeLink === 'save-the-date' ? styles.activeLink : ''}
-              >
-                Wedding Date
-              </span>
-            </Link>
+            <a 
+              href="#save-the-date" 
+              onClick={(e) => handleLinkClick('#save-the-date', e)} 
+              className={activeLink === 'save-the-date' ? `${styles.activeLink} active` : ''}
+            >
+              Wedding Date
+            </a>
           </div>
           <div className={styles.saveTheDate}>
-            <Link href="#muhurtham" passHref>
-              <span 
-                onClick={() => handleLinkClick('muhurtham')}
-                className={activeLink === 'muhurtham' ? styles.activeLink : ''}
-              >
-                Muhurtham
-              </span>
-            </Link>
+            <a 
+              href="#muhurtham" 
+              onClick={(e) => handleLinkClick('#muhurtham', e)} 
+              className={activeLink === 'muhurtham' ? `${styles.activeLink} active` : ''}
+            >
+              Muhurtham
+            </a>
           </div>
           <div className={styles.saveTheDate}>
-            <Link href="#reception" passHref>
-              <span 
-                onClick={() => handleLinkClick('reception')}
-                className={activeLink === 'reception' ? styles.activeLink : ''}
-              >
-                Reception
-              </span>
-            </Link>
+            <a 
+              href="#reception" 
+              onClick={(e) => handleLinkClick('#reception', e)} 
+              className={activeLink === 'reception' ? `${styles.activeLink} active` : ''}
+            >
+              Reception
+            </a>
           </div>
         </div>
       </div>

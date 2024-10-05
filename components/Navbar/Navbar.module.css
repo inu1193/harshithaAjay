@@ -15,7 +15,7 @@
   padding: 4px 100px; /* Padding around the logo and navigation */
   box-sizing: border-box;
   font-size: 24px; /* Adjusted font size */
-  color: #000; /* Black text color */
+
   font-family: 'Playfair', serif; /* Playfair font */
 }
 
@@ -61,7 +61,7 @@
 
 /* Link styles */
 .saveTheDate a {
-  color: #000; /* Black text color */
+ /* Black text color */
   text-decoration: none; /* No underline */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
@@ -72,32 +72,40 @@
 }
 
 .saveTheDate a:active {
+  color: coral;
+
   text-decoration: underline; /* Underline on active state */
 }
 
+/* Add active link styles */
+.saveTheDate a.active {
+  color: #ff6f61; /* Set the active link color */
+}
 
+/* Media Queries */
 @media (min-width: 350px) and (max-width: 860px) {
-  .logoIcon{
+  .logoIcon {
     width: 125px; /* Set width */
     height: 90px;
-
   }
   
   .logoParent {
     flex-direction: column; /* Stack items vertically */
-    align-items:center; /* Center the logo */
+    align-items: center; /* Center the logo */
     justify-content: space-around;
     padding: 4px 20px;
     font-size: 18px;
     gap: 10px;
+    font-weight: 500;
   }
-
+  
   .frameParent {
+    font-weight: 600;
     flex-direction: row; /* Keep nav-links in a row */
     flex-wrap: wrap; /* Allow nav-links to wrap to a new line */
     justify-content: space-around; /* Center navigation links */
     gap: 10px; /* Space between nav-links */
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .saveTheDate {
@@ -105,7 +113,12 @@
   }
 
   .logoIcon {
-    margin-bottom: 10px; /* Space between logo and nav-links */
+
   }
 }
 
+/* Styles for the active navigation link */
+
+.active:hover{
+  color: #ff6f61;
+}
