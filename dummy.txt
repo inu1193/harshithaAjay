@@ -1,0 +1,10 @@
+const greatVibes = localFont({
+  src: "./fonts/GreatVibes-Regular.woff",
+  variable: "--font-great-vibes",
+  weight: "100 900",
+});
+const roboto = localFont({
+  src: "./fonts/Roboto-Regular.woff",
+  variable: "--font-roboto",
+  weight: "100 900",
+});

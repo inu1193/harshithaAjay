@@ -53,7 +53,8 @@ body {
 }
 
 body::selection{
-  background:#FF8E83 ;
+  background:var(--coral-light) ;
+  color: var(--gray);
 }
 
 
