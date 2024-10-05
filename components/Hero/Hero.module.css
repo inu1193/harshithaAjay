@@ -5,7 +5,7 @@
 }
 
 .heroImgContainer{
-    width: 50vw;
+    width: 55vw;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -13,14 +13,14 @@
 }
 
 .heroImg{
-    width: 55vw;
+    width: 100%;
     height: fit-content;
     flex-shrink: 0;
     object-fit: contain;
-    mask-image: url('../../assets/heroImg.png');
+    mask-image: url('../../assets/HeroImg.png');
     mask-size: cover;
     mask-repeat: no-repeat;
-    -webkit-mask-image: url('../../assets/heroImg.png');
+    -webkit-mask-image: url('../../assets/HeroImg.png');
     -webkit-mask-size: cover;
     -webkit-mask-repeat: no-repeat;
 
