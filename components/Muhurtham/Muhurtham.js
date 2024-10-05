@@ -21,4 +21,5 @@ const Muhurtham = () => {
   )
 }
 
-export default Muhurtham
+export default Muhurtham;
+// Nothing much
