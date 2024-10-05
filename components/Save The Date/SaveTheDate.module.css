@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+
+.saveTheDate {
+    align-self: stretch;
+    position: relative;
+    margin: 0;
+    line-height: normal;
+}
+
+.november {
+    font-weight: 600;
+}
+
+.span {
+    font-size: 56px;
+    font-weight: 600;
+    font-family: Roboto;
+    color: #ff6f61;
+}
+
+.th {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Playfair;
+}
+
+.span1 {
+    font-size: 56px;
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+.clipPathGroup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Hearts stay behind the numbers */
+}
+
+.div {
+    position: relative;
+    font-size: 48px;
+    font-weight: 600;
+    z-index: 2; /* Numbers stay on top */
+}
+
+.heart {
+    width: 162px;
+    position: relative;
+    height: 162px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    align-self: stretch;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Playfair;
+    color: #ff8e83;
+}
+
+.heartParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #f5f5f5;
+}
+
+
+.div1,
+.div3 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: Playfair;
+    display: flex; /* Use flex to center the colons */
+    align-items: center; /* Aligns colons vertically */
+    justify-content: center; /* Centers colons horizontally */
+    height: 50vh; /* Matches the height of the hearts */
+    margin-bottom: 45px;
+}
+.hours {
+    align-self: stretch;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Playfair;
+    color: #b2b2b2;
+}
+
+.heartGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4a4a4a;
+}
+
+
+
+.countdown {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 24px;
+    font-size: 56px;
+    color: #9a9a9a;
+    font-family: Roboto;
+    position: relative;
+}
+
+.november4th2024MondayParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 60px;
+    font-family: Playfair;
+}
+
+.savethedate {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: center;
+    font-size: 80px;
+    color: #4a4a4a;
+    font-family: 'Great Vibes';
+}
+
+.heartGroup,
+.heartParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Keeps hearts and text in correct layering */
+    gap: 8px;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .countdown {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 8px; /* Reduce gap for smaller screens */
+        font-size: 36px; /* Adjust font size */
+    }
+
+    .heart {
+        width: 120px;
+        height: 120px;
+    }
+
+    .div {
+        font-size: 36px; /* Adjust number size */
+    }
+
+    .days, .hours {
+        font-size: 24px; /* Adjust labels size */
+    }
+
+    .div1, .div3 {
+        font-size: 36px; /* Adjust colon size */
+    }
+
+    .savethedate {
+        font-size: 60px; /* Adjust Save the Date text size */
+    }
+
+    .span, .th {
+        font-size: 30px;
+    }
+    .november{
+        font-size: 30px;
+    }
+    .span1{
+        font-size: 25px;
+    }
+}
+
+/* Media Query for screens between 768px and 1024px */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .countdown {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 16px; /* Moderate gap */
+        font-size: 48px; /* Adjust font size */
+    }
+
+    .heart {
+        width: 140px;
+        height: 140px;
+    }
+
+    .div {
+        font-size: 42px; /* Adjust number size */
+    }
+
+    .days, .hours {
+        font-size: 28px; /* Adjust labels size */
+    }
+
+    .div1, .div3 {
+        font-size: 42px; /* Adjust colon size */
+    }
+
+    .savethedate {
+        font-size: 72px; /* Adjust Save the Date text size */
+    }
+
+    .span, .span1, .th {
+        font-size: 48px;
+    }
+}

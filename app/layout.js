@@ -24,12 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
+        // If you are using custom fonts, uncomment the next line
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${greatVibes.variable} ${roboto.variable}`}
       >
-        <Navbar />
+        <Navbar />  {/* Renders the Navbar component */}
         {children}
-        <Footer />
+        <Footer />  {/* Renders the Footer component */}
       </body>
     </html>
   );

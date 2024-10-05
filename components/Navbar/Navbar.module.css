@@ -1,3 +1,129 @@
-.navbar{
-    /* CSS goes here */
+.header {
+  width: 100vw;
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 10px 0; /* Top and bottom padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  z-index: 1000; /* Stays on top */
+}
+
+.logoParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 100px; 
+  box-sizing: border-box;
+  font-size: 24px; /* Adjusted font size */
+
+  font-family: 'Playfair', serif; /* Playfair font */
+}
+
+.logoIcon {
+  width: 90px; /* Set width */
+  height: 70px; /* Set height */
+  object-fit: cover; /* Maintain aspect ratio */
+  position: relative;
+}
+
+.frameParent {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for items */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: center; /* Align to the left */
+  gap: 20px; /* Space between items */
+}
+
+.welcomeParent {
+  display: flex;
+  flex-direction: column; /* Vertical layout for welcome text */
+  align-items: flex-start; /* Align text to the right */
+  justify-content: flex-start; /* Start from the top */
+  gap: 5px; /* Space between items */
+  color: #ff6f61; /* Custom color */
+}
+
+.welcome {
+  align-self: stretch; /* Stretch to fit */
+  position: relative;
+}
+
+.frameChild {
+  align-self: stretch; /* Stretch to fit */
+  position: relative;
+  border-top: 1px solid #ff6f61; /* Custom border */
+  height: 1px; /* Height for the border */
+}
+
+.saveTheDate {
+  position: relative; /* Relative positioning */
+}
+
+/* Link styles */
+.saveTheDate a {
+ /* Black text color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Pseudo-classes for interactive elements */
+.saveTheDate a:hover {
+  color: coral; /* Change color on hover */
+}
+
+.saveTheDate a:active {
+  color: coral;
+
+  text-decoration: underline; /* Underline on active state */
+}
+
+
+/* Media Queries */
+@media (min-width: 350px) and (max-width: 860px) {
+  .header{
+    width: 100%;
+  }
+  .logoIcon {
+    width: 125px; /* Set width */
+    height: 90px;
+  }
+  
+  .logoParent {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the logo */
+    justify-content: space-around;
+    padding: 4px 20px;
+    font-size: 18px;
+    gap: 10px;
+    font-weight: 500;
+  }
+  
+  .frameParent {
+    font-weight: 600;
+    flex-direction: row; /* Keep nav-links in a row */
+    flex-wrap: wrap; /* Allow nav-links to wrap to a new line */
+    justify-content: space-around; /* Center navigation links */
+    gap: 20px; /* Space between nav-links */
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .saveTheDate {
+
+  }
+
+  .logoIcon {
+
+  }
+}
+
+/* Styles for the active navigation link */
+
+.active:hover{
+  color: #ff6f61;
+}
+.body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 0;
+  overflow-x:hidden;
 }
