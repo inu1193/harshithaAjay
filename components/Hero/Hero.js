@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './Hero.module.css'
 import Image from 'next/image'
 import heroImg from '../../assets/HeroImg.png'
-import heroTitle from '../../assets/HeroTitle.png'
-import heroGif from '../../assets/heroGif1.gif'
+import heroTitle from '../../assets/HeroTitle1.png'
+import heroGif from '../../assets/HeroGif2.gif'
 
 const Hero = () => {
   return (

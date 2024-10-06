@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/harshJay.png';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className='body'>
     <header className={styles.header}>
       <div className={styles.logoParent}>
-        <Image className={styles.logoIcon} alt="Wedding Logo" src={logo.src} width={90} height={70} />
+        <Image className={styles.logoIcon} alt="Wedding Logo" src={logo} width={90} height={70} />
         <div className={styles.frameParent}>
           <div className={styles.welcomeParent}>
           {/* <div className={styles.frameChild} /> */}

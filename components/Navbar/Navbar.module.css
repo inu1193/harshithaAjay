@@ -20,9 +20,9 @@
 }
 
 .logoIcon {
-  width: 90px; /* Set width */
-  height: 70px; /* Set height */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 100px; 
+  height: 80px;
+  object-fit: contain; 
   position: relative;
 }
 

@@ -13,6 +13,24 @@
   --coral-light:#FF8E83;
 }
 
+.flowerContainer1{
+  position: absolute;
+  left: 0rem;
+  width: 24vw;
+  height: 24vw;
+  display: none;
+  opacity: 0.85;
+}
+
+.flowerContainer{
+  position: absolute;
+  right: 0rem;
+  width: 24vw;
+  height: 24vw;
+  display: none;
+  opacity: 0.85;
+}
+
 .title{
   color: var(--grayDark, #4A4A4A);
   text-align: center;
@@ -44,6 +62,9 @@
   font-weight: 800;
 }
 
+html,body{
+  overflow-x: hidden;
+}
 
 body {
   background: var(--background);
@@ -77,6 +98,15 @@ body::selection{
     font-size: 2rem;
     font-weight: 800;
   }
+
+  .flowerContainer{
+    right:-5rem ;
+    display: block;
+  }
+  .flowerContainer1{
+    left: -5rem;
+    display: block;
+  }
 }
 
 @media screen and  ( max-width:768px) {
@@ -100,6 +130,13 @@ body::selection{
   .bold{
     font-size: 1.5rem;
     font-weight: 800;
+  }
+
+  .flowerContainer{
+    display: block;
+  }
+  .flowerContainer1{
+    display: block;
   }
 
 }
