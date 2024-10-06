@@ -72,7 +72,8 @@
 
 @media screen and (max-width:768px){
     .muhurthamSec{
-        width: 95vw;
+        width: 100vw;
+        padding: 0 1rem;
         gap: 1.5rem;
         margin-top: 8rem;
     }

@@ -1,24 +1,24 @@
 /* components/Footer.module.css */
 .footer {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items */
-    padding: 20px; /* Padding around footer */
-    background-color: #F5f5f5; /* Dark background color */
-    color: #333; /* White text color */
-    font-family: Arial, sans-serif; /* Font family */
-    text-align: center; /* Center align text */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #F5f5f5; 
+    color: #333; 
+    font-family: var(--font-roboto);
+    text-align: center; 
     margin-top: 13rem;
     padding-bottom: 2.5rem;
 }
 
 .logoContainer {
-    margin-bottom: 15px; /* Space below the logo */
+    margin-bottom: 15px; 
 }
 
 .logoImage {
-    width: 250px; /* Set width of logo image */
-    height: 250px; /* Keep aspect ratio */
+    width: 250px;
+    height: 250px; 
 }
 
 .addressContainer {
@@ -26,17 +26,17 @@
 }
 
 .addressTitle {
-    font-size: 18px; /* Title font size */
+    font-size: 1.25rem; /* Title font size */
     margin-bottom: 10px; /* Space below title */
 }
 
 .addressText {
-    font-size: 16px; /* Address text size */
+    font-size: 1rem; /* Address text size */
 }
 
 /* components/Footer.module.css */
 .addressLink {
-    color: #FF6F61;
+    color: var(--coral);
     text-decoration: none;
     font-weight: bold;
     display: flex; /* Use flexbox for alignment */
@@ -47,6 +47,7 @@
 
 .addressLink:hover {
     text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 .pinIcon {

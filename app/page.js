@@ -26,6 +26,10 @@ const page = () => {
         <Venue />
       </section>
 
+      <section id="reception">
+        <Await />
+      </section>
+
       {/* You can add more components here */}
     </div>
   );

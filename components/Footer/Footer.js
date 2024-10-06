@@ -8,7 +8,7 @@ const Footer = () => {
     const venue = {
         name: "Rathna Convention Center",
         street: "CMS Estate, NH75",
-        city: "Kolar-Mulbagilu",
+        city: "Kolar-Mulbagilu road",
         state: "Kolar-",
         zip: "563101",
         url: "https://maps.app.goo.gl/UA94Z9TAWdWFTRaq7", // Example URL

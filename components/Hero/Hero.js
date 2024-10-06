@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 import Image from 'next/image'
 import heroImg from '../../assets/HeroImg.png'
 import heroTitle from '../../assets/HeroTitle.png'
-import heroGif from '../../assets/heroGif.gif'
+import heroGif from '../../assets/heroGif1.gif'
 
 const Hero = () => {
   return (

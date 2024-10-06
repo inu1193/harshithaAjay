@@ -259,11 +259,12 @@
     }
 
     .span, .th {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
     .november{
         font-size: 30px;
-        line-height: 24px;
+        line-height: 16px;
+        font-size: 1.5rem;
     }
     .span1{
         font-size: 25px;

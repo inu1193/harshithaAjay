@@ -66,6 +66,7 @@ body::selection{
   .title{
     font-family: "Great Vibes";
     font-size: 3.25rem;
+    line-height: 3rem;
   }
   .coral{
     font-size: 2rem;
@@ -89,6 +90,7 @@ body::selection{
   .title{
     font-family: var(--font-great-vibes);
     font-size: 3rem;
+    line-height: 3rem;
   }
   .coral{
     font-size: 1.5rem;
