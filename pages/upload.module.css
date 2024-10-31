@@ -1,0 +1,391 @@
+/* pages/upload.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+    justify-content: center;
+    /* min-height: 100vh; */
+    /* height: 100vh; */
+    margin-top: 50px;
+    /* top: 0; */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heroTitleContainer {
+    width: 100%;
+    height: 75%;
+}
+
+.heroTitle {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: contain;
+}
+
+.p {
+    color: var(--grayDark, #4A4A4A);
+    /* font-family: Playfair; */
+    font-size: 1.50rem;
+    font-weight: 500;
+    text-align: center;
+}
+/* Existing styles omitted for brevity... */
+
+.dropArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ff7f50; /* Dashed border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+    text-align: center;
+    cursor: pointer; /* Pointer cursor to indicate clickable area */
+    transition: background-color 0.3s ease;
+}
+
+.dropArea:hover {
+    background-color: #ffe4e1; /* Light coral background on hover */
+}
+
+.dragging {
+    background-color: #ffe4e1; /* Light coral background while dragging files */
+    border-color: #fc6f56; /* Darker border while dragging */
+}
+
+.chooseFileLink {
+    color: #ff6f61; /* Coral color for the link */
+    text-decoration: underline; /* Underlined link */
+    cursor: pointer; /* Pointer cursor for link */
+}
+
+.right {
+    display: flex;
+    width: 32vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonP{
+    font-size: 1.1rem;
+    line-height:25px;
+}
+
+.inP {
+    color: #FF6F61;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white; /* White background for the form */
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.fileInput {
+    display: none; /* Hide the default file input */
+}
+
+/* Custom file input styling */
+.fileInputLabel {
+    display: inline-block;
+    background-color: #ff7f50; /* Coral background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.fileInputLabel:hover {
+    background-color: #ff6347; /* Darker coral on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.fileInputLabel:active {
+    transform: scale(0.95); /* Slightly scale down on click */
+}
+
+.previewContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 10px; /* Spacing between previews */
+    align-items: center;
+    justify-content: center;
+    min-width: 360px;
+    margin-bottom: 20px; /* Space below the preview section */
+}
+
+.imagePreview {
+    width: 150px; /* Fixed width for previews */
+    height: 150px; /* Fixed height for previews */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border: 2px solid #ff7f50; /* Coral border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px;
+}
+
+.uploadButton {
+    background-color: #ff7f50; /* Coral button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.uploadButton:hover {
+    background-color: #fc6f56; /* Darker coral on hover */
+}
+
+.uploadButton:disabled {
+    background-color: #ffe4e1; /* Light coral for disabled */
+    cursor: not-allowed;
+}
+
+.notification {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+    opacity: 0.9; /* Semi-transparent */
+  }
+  
+  .notification.success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+  }
+  
+  .notification.error {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+  }
+  
+@media (max-width: 768px) {
+    .container{
+        height: 85vh;
+        margin-top: 1px;
+    }
+    .buttonP{
+        font-size: 1rem;
+    }
+    .heroTitleContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        font-size: 2rem; /* Slightly smaller font for mobile */
+    }
+
+    .description {
+        font-size: 1rem; /* Smaller description font for mobile */
+        margin: 0 20px; /* Margin for mobile */
+    }
+
+    .form {
+        padding: 20px; /* Less padding on mobile */
+        width: 90%; /* Full width with some padding */
+    }
+
+    .uploadButton {
+        padding: 8px 0; /* Less padding on mobile */
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .imagePreview {
+        width: 150px; /* Smaller previews on mobile */
+        height: 150px; /* Smaller previews on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem; /* Even smaller for very small screens */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Smaller description font for very small screens */
+    }
+}
+@media screen and (max-width:1024px) and (min-width:768px){
+    .heroSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroImgContainer{
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .heroImg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* transform: translate(-60px); */
+    }
+    
+    .p{
+        color: var(--grayDark, #4A4A4A);
+        font-family: Playfair;
+        font-size: 1.75rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .inP{
+        /* color: var(--coral); */
+        font-weight: 600;
+    }
+    
+    .right{
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroTitleContainer{
+        width: 60vw;
+        height:fit-content;
+    }
+    
+    .heroTitle{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .heroSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 1.5rem; */
+        overflow-x: hidden;
+    }
+    .heroImgContainer{
+        width: 112vw;
+        height: fit-content;
+    }
+    
+    .heroImg{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* transform: translate(-60px); */
+    }
+    
+    .p{
+        color: var(--grayDark, #4A4A4A);
+        font-family: Playfair;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .inP{
+        /* color: var(--coral); */
+        font-weight: 600;
+    }
+    
+    .right{
+        display: flex;
+        width: 88vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .heroTitleContainer{
+        width: 85vw;
+        height: fit-content;
+    }
+    
+    .heroTitle{
+        width: 75%;
+        height: 75%;
+        margin-left: 50px;
+        object-fit: contain;
+    }
+
+}
+
+
+.btnContainer{
+    width: 100%;
+    max-width: 340px;
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: var(--coral, #FF6F61);
+    color: var(--Whitish, #F5F5F5);
+    text-align: center;
+
+    /* font-size: 1.5rem; */
+    border: none;
+    font-weight: 500;
+    box-shadow: 0px 3px 25px 0px rgba(255, 111, 97, 0.62);
+    height: 64px;
+}
+
+.btn:hover{
+    background: #f86052;
+}
+
+.btn:active{
+    background: var(--coral-light);
+}
+
+@media screen and (max-width:768px){
+    .btn{
+        height: 56px;
+        min-width: 200px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:760px){
+    .btnContainer{
+        width: 90vw;
+        max-width: 315px;
+    }
+    .btn{
+        /* width: 100%; */
+        height: 56px;
+        min-width: 200px;
+        font-size: 1.25rem;
+    }
+}
+
+
+

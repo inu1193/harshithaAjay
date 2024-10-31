@@ -28,6 +28,7 @@
 .addressTitle {
     font-size: 1.25rem; /* Title font size */
     margin-bottom: 10px; /* Space below title */
+    font-weight: 300;
 }
 
 .addressText {
