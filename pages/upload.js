@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './upload.module.css'; // Import the CSS module
 import heroTitle from '../assets/HeroTitle1.png';
 import Image from 'next/image';
+import check_circle from '../assets/check-circle.svg'
 import Button from '@/components/Button/Button';
 
 export default function UploadPage() {
@@ -152,9 +153,17 @@ export default function UploadPage() {
 
       {/* Notification Area */}
       {notification.message && (
-        <div className={`${styles.notification} ${styles[notification.type]}`}>
-          {notification.message}
+        <div className={styles.notification}>
+        <div className={styles.notification__body}>
+             <Image 
+                src={check_circle}
+                alt="Success"
+                class="notification__icon"
+            /> 
+            Thank You for being part of our wedding &#128640; 
         </div>
+        <div className={styles.notification__progress}></div>
+    </div>
       )}
     </div>
   );
