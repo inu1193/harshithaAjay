@@ -112,7 +112,7 @@ export default function UploadPage() {
           <Image src={heroTitle} className={styles.heroTitle} alt='Harshitha weds Ajay' priority />
         </div>
         <p className={styles.p}>
-        "Celebrate with the  <span className={styles.inP}>newlyweds</span>" <br />Share Your <span className={styles.inP}>beautiful moments </span>today, and help create <span className={styles.inP}>memories</span> that last a lifetime.
+        &quot;Celebrate with the  <span className={styles.inP}>newlyweds</span>&quot; <br />Share Your <span className={styles.inP}>beautiful moments </span>today, and help create <span className={styles.inP}>memories</span> that last a lifetime.
         </p>
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
